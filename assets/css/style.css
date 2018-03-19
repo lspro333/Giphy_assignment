@@ -1,0 +1,32 @@
+body{
+	background: url("../images/background.jpg");
+	background-size: 100%;
+    color: black;
+}
+* {
+	box-sizing: border-box;
+}
+img { 
+    height: 200px;
+    width: 200px;
+}
+.btn {
+    margin: 3px;
+    background-color: darkgray;
+    border-color: white;
+}
+.gifDiv{
+    float: left;
+    margin: 3px;
+}
+.container {
+	background-color: white;
+	opacity: 0.9;
+	padding: 20px;
+}
+.jumbotron {
+    background-color: darkgray;
+}
+.jumbotron .h1, .jumbotron h1 {
+    text-align: center;
+}

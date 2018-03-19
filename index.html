@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog Breed Gifs</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header  -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Dog Breed Search</h1>
+        </div>
+    </div>
+    <!-- Buttons  -->
+    <div id="gifButtonsView" class="container">
+    </div>
+     <!-- Main Container  -->
+    <div class="container">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <!-- Gifs  -->
+            <div id="gifsView"></div>
+        </div>
+         <!-- Submission Form  -->
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <form id="gif-form" role="form">
+                <h2><legend>Dog Breed Submission</legend></h2>
+                <div class="form-group">
+                    <label for="dogBreed-input">Add your dog breed below</label>
+                    <input type="text" id="dogBreed-input">
+                </div>
+                <input id="addGif" type="submit" value="Add your dog breed" class="btn btn-primary">
+            </form>    
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+</body>
+</html>
