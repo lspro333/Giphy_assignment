@@ -1,5 +1,5 @@
 body{
-	background: url("../images/background.jpg");
+	/* background: url("../images/background.jpg"); */
 	background-size: 100%;
     color: black;
 }
@@ -18,7 +18,18 @@ img {
 .gifDiv{
     float: left;
     margin: 3px;
+    /* background-color: white;
+	opacity: 0.9; */
+	padding: 20px;
 }
+
+#gif-form{
+    margin-left: 50px;
+    /* background-color: white;
+	opacity: 0.9; */
+	padding: 20px;
+}
+
 .container {
 	background-color: white;
 	opacity: 0.9;

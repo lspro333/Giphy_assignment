@@ -14,25 +14,22 @@ $( document ).ready(function() {
             $("#gifButtonsView").append(gifButton);
         }
     }
-    // Function to add a new dogBreeds button (Not working at the moment - need to debug)
+    // Function to add a new dogBreeds button 
     function addNewButton(){
         $("#addGif").on("click", function(){
-        var dogBreeds = $("#dogBreeds-input").val().trim();
-        if (dogBreeds == ""){
-        // User can't add a blank button
-          return false; 
-        }
-        dogBreeds.push(dogBreeds);
-    
-        displayGifButtons();
+        var newSearch = $("input").eq(0).val();
+        dogBreeds.push(newSearch);
+        $("form").trigger("reset");
+        displayGifButtons()
         return false;
+        
         });
     
     }
     // Function that displays gifs
     function displayGifs(){
         var dogBreeds = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + dogBreeds + "&api_key=npGIJae1BijOgso31jp5mnpK1QExRArT";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + dogBreeds + "&api_key=npGIJae1BijOgso31jp5mnpK1QExRArT&limit=12";
         console.log(queryURL); 
         $.ajax({
             url: queryURL,
